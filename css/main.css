@@ -75,31 +75,31 @@ body {
 
 @font-face {
   font-family: Manrope-Regular;
-  src: url(/fonts/Manrope-Regular.ttf);
+  src: url(/Traffic-BS5-ver/fonts/Manrope-Regular.ttf);
 }
 @font-face {
   font-family: Manrope-Medium;
-  src: url(/fonts/Manrope-Medium.ttf);
+  src: url(/Traffic-BS5-ver/fonts/Manrope-Medium.ttf);
 }
 @font-face {
   font-family: Manrope-SemiBold;
-  src: url(/fonts/Manrope-SemiBold.ttf);
+  src: url(/Traffic-BS5-ver/fonts/Manrope-SemiBold.ttf);
 }
 @font-face {
   font-family: Manrope-Bold;
-  src: url(/fonts/Manrope-Bold.ttf);
+  src: url(/Traffic-BS5-ver/fonts/Manrope-Bold.ttf);
 }
 @font-face {
   font-family: Manrope-Light;
-  src: url(/fonts/Manrope-Light.ttf);
+  src: url(/Traffic-BS5-ver/fonts/Manrope-Light.ttf);
 }
 @font-face {
   font-family: Outfit-Black;
-  src: url(/fonts/Outfit-Black.ttf);
+  src: url(/Traffic-BS5-ver/fonts/Outfit-Black.ttf);
 }
 @font-face {
   font-family: Outfit-Bold;
-  src: url(/fonts/Outfit-Bold.ttf);
+  src: url(/Traffic-BS5-ver/fonts/Outfit-Bold.ttf);
 }
 a, button, p, h1, h2, h3, h4, h5 {
   font-family: manrope-regular;
@@ -107,15 +107,15 @@ a, button, p, h1, h2, h3, h4, h5 {
 
 @font-face {
   font-family: TTFirsNeue-Regular;
-  src: url(/fonts/TTFirsNeue-Regular.ttf);
+  src: url(/Traffic-BS5-ver/fonts/TTFirsNeue-Regular.ttf);
 }
 @font-face {
   font-family: TTFirsNeue-Medium;
-  src: url(/fonts/TTFirsNeue-Medium.ttf);
+  src: url(/Traffic-BS5-ver/fonts/TTFirsNeue-Medium.ttf);
 }
 @font-face {
   font-family: TTFirsNeue-DemiBold;
-  src: url(/fonts/TTFirsNeue-DemiBold.ttf);
+  src: url(/Traffic-BS5-ver/fonts/TTFirsNeue-DemiBold.ttf);
 }
 .navbar {
   background-color: transparent;
