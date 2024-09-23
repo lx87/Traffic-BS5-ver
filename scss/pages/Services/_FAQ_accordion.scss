@@ -1,3 +1,6 @@
+$acc_font_size_button: 2.1rem;
+$acc_font_size_button_adapt: 1.5rem;
+
 $acc_font_size_h: 2rem;
 $acc_font_size_p: 1.2rem;
 $acc_font_size_h_adapt: 1.2rem;
@@ -52,15 +55,14 @@ $acc_width: 80vw;
     border: none;
     color: white;
     background-color: transparent;
-    font-size: $acc_font_size_h;
+    font-size: $acc_font_size_button;
     width: $acc_width;
     text-align: left;
 
     font-family: $man_med ;
     cursor: pointer;
     @media screen and (max-width: 900px) { 
-        font-size: 3vw;
-       
+        font-size: $acc_font_size_button_adapt;
     }
 }
 
@@ -74,7 +76,7 @@ $acc_width: 80vw;
     transition: all ease .4s ;
     width: 4vw;
 
-    transform: translateY(.35vw);
+    transform: translateY(.15vw);
 
     @media screen and (max-width: 900px) { 
         width: 6vw;

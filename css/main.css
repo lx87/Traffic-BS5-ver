@@ -736,6 +736,12 @@ a, button, p, h1, h2, h3, h4, h5 {
   width: clamp(97px, 14vw, 242px);
 }
 
+.footer_a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1200px) {
   .footer {
     grid-template-columns: 1fr;
@@ -753,7 +759,8 @@ a, button, p, h1, h2, h3, h4, h5 {
     text-align: center;
   }
   .footer_logo {
-    width: 18rem;
+    width: 14rem;
+    align-self: center;
   }
 }
 .game_section_col1 {
@@ -771,7 +778,7 @@ a, button, p, h1, h2, h3, h4, h5 {
   border: 1px solid #FF57FF;
   border-radius: 20px;
   padding: 4rem 2rem;
-  background-image: url(/Img/games/games_bg.png);
+  background-image: url(/Traffic-BS5-ver/Img/games/games_bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -819,7 +826,7 @@ a, button, p, h1, h2, h3, h4, h5 {
   border: 1px solid #FF57FF;
   border-radius: 20px;
   padding: 4rem 2rem;
-  background-image: url(/Img/games/games_bg.png);
+  background-image: url(/Traffic-BS5-ver/Img/games/games_bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -943,7 +950,7 @@ a, button, p, h1, h2, h3, h4, h5 {
   border: none;
   color: white;
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 2.1rem;
   width: 80vw;
   text-align: left;
   font-family: Manrope-medium;
@@ -951,7 +958,7 @@ a, button, p, h1, h2, h3, h4, h5 {
 }
 @media screen and (max-width: 900px) {
   .accordion_base {
-    font-size: 3vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -964,7 +971,7 @@ a, button, p, h1, h2, h3, h4, h5 {
   fill: #FF57FF;
   transition: all ease 0.4s;
   width: 4vw;
-  transform: translateY(0.35vw);
+  transform: translateY(0.15vw);
 }
 @media screen and (max-width: 900px) {
   .accordion_icon {
@@ -1053,7 +1060,7 @@ a, button, p, h1, h2, h3, h4, h5 {
   border-radius: 20px;
   backdrop-filter: blur(18px);
   background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.03) 8.254%, rgba(115, 113, 255, 0.07) 100%);
-  background-image: url(/Img/BGs/gift_bg.png);
+  background-image: url(/Traffic-BS5-ver/Img/BGs/gift_bg.png);
   background-size: cover;
   background-position: center;
   display: flex;

@@ -60,6 +60,12 @@
     width: clamp(97px, 14vw, 242px);
 }
 
+.footer_a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 1200px) {
     .footer{
         grid-template-columns: 1fr;
@@ -79,7 +85,10 @@
     .footer_col_h2{
         text-align: center;
     }
+
     .footer_logo{
-        width: 18rem;
+        width: 14rem;
+        align-self: center;
+        
     }
 }

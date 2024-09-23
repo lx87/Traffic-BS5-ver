@@ -7,7 +7,6 @@ elements.forEach(element => {
 
     const content = element.querySelector('.accordion_content');
     const icon = element.querySelector('.accordion_icon');
-
     content.classList.toggle('active');
     element.classList.toggle('active');
 
