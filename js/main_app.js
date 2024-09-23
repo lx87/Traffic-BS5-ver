@@ -41,17 +41,6 @@ window.addEventListener('load', function() {
     menuContainer.classList.remove('menu_hidden');
 });
 
-//FLATPickR input
-
-flatpickr("#calltime", {
-    enableTime: true,
-    noCalendar: false,  // Отображаем календарь, но форматируем без года
-    dateFormat: "d.m H:i",  // Формат без года (день.месяц часы:минуты)
-    time_24hr: false  // Для 24-часового формата
-});
-
-
-
 //FORM VALIDATION
 
 document.getElementById('customForm').addEventListener('submit', function (event) {

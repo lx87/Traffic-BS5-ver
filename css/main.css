@@ -693,6 +693,10 @@ a, button, p, h1, h2, h3, h4, h5 {
   color: white;
 }
 
+.medium {
+  font-family: Manrope-medium;
+}
+
 .footer_col_h {
   font-family: Manrope-bold;
   margin-bottom: 1rem;
