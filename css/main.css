@@ -240,6 +240,7 @@ a, button, p, h1, h2, h3, h4, h5 {
 }
 .hero_section {
   margin-top: 15rem;
+  width: max-content;
 }
 
 .hero_main_h {
