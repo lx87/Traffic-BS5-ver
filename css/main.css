@@ -749,10 +749,7 @@ a, button, p, h1, h2, h3, h4, h5 {
     padding: 4rem 2rem;
     gap: 4rem;
   }
-  .footer_col_p {
-    font-size: 1.2rem;
-  }
-  .footer_col_h {
+  .footer_col_h, .footer_col_p {
     font-size: 1.6rem;
     text-align: center;
   }
