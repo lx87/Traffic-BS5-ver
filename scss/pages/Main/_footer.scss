@@ -43,6 +43,7 @@
 .footer_col_p{
     font-family: $man_reg;
     margin: 0;
+    font-size: .9rem;
 }
 
 .footer_button{
@@ -73,6 +74,11 @@
         gap: 4rem;
 
     }
+
+    .footer_col_p{
+        font-size: 1.2rem;
+    }
+    
 
     .footer_col_h{
         font-size: 1.6rem;
