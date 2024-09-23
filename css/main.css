@@ -1,0 +1,1160 @@
+@charset "UTF-8";
+:root {
+  --index: calc(1vw+1vh);
+}
+
+.bg_main {
+  background-image: url(/Img/BGs/main\ bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg_services {
+  background-image: url(/Img/BGs/services\ bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+input {
+  outline: 0;
+}
+
+.wrapper {
+  padding-left: clamp(14px, 4vw, 88px);
+  padding-right: clamp(14px, 4vw, 88px);
+}
+
+html {
+  overflow-x: hidden;
+  cursor: default;
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+  scrollbar-gutter: stable;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 15px; /* Размер для экранов шире 1400px */
+  }
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #140818;
+}
+
+.void {
+  height: 1000px;
+}
+
+@font-face {
+  font-family: Manrope-Regular;
+  src: url(/fonts/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: Manrope-Medium;
+  src: url(/fonts/Manrope-Medium.ttf);
+}
+@font-face {
+  font-family: Manrope-SemiBold;
+  src: url(/fonts/Manrope-SemiBold.ttf);
+}
+@font-face {
+  font-family: Manrope-Bold;
+  src: url(/fonts/Manrope-Bold.ttf);
+}
+@font-face {
+  font-family: Manrope-Light;
+  src: url(/fonts/Manrope-Light.ttf);
+}
+@font-face {
+  font-family: Outfit-Black;
+  src: url(/fonts/Outfit-Black.ttf);
+}
+@font-face {
+  font-family: Outfit-Bold;
+  src: url(/fonts/Outfit-Bold.ttf);
+}
+a, button, p, h1, h2, h3, h4, h5 {
+  font-family: manrope-regular;
+}
+
+@font-face {
+  font-family: TTFirsNeue-Regular;
+  src: url(/fonts/TTFirsNeue-Regular.ttf);
+}
+@font-face {
+  font-family: TTFirsNeue-Medium;
+  src: url(/fonts/TTFirsNeue-Medium.ttf);
+}
+@font-face {
+  font-family: TTFirsNeue-DemiBold;
+  src: url(/fonts/TTFirsNeue-DemiBold.ttf);
+}
+.navbar {
+  background-color: transparent;
+}
+
+.navbar_logo {
+  width: clamp(97px, 14vw, 242px);
+}
+
+.nav_link {
+  transition: color 0.2s ease, text-decoration-color 0.3s ease;
+  color: #D2D2D2;
+  text-decoration: underline;
+  text-decoration-color: #140818;
+  font-size: 1.5rem;
+}
+
+.nav_link:hover {
+  color: #FF57FF;
+  text-decoration-color: #FF57FF;
+}
+
+.menu_btn {
+  background-color: transparent;
+  border: none;
+  width: clamp(47px, 6rem, 96px);
+  height: clamp(48px, 6rem, 77px);
+  transform: translateX(10px);
+}
+
+.menu_btn_icon {
+  stroke: white;
+  transition: stroke 0.2s ease;
+  pointer-events: none;
+}
+
+.menu_btn:hover .menu_btn_icon {
+  stroke: #FF57FF;
+}
+
+.header_btn {
+  border: 2px solid rgb(197, 54, 239);
+  border-radius: 52.11px;
+  box-shadow: 0px 0px 22px 0px rgba(176, 102, 255, 0.15);
+  background: rgba(255, 87, 255, 0.08);
+  color: white;
+  font-family: Manrope-SemiBold;
+  letter-spacing: 0%;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.6rem 1.8rem;
+  font-size: 16px;
+}
+
+.header_btn:hover {
+  background: rgba(255, 0, 255, 0.59);
+}
+
+.menu_container {
+  height: max-content;
+  background-color: #1B0F19;
+  z-index: 20;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all ease 0.6s;
+  visibility: hidden;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: clamp(14px, 4vw, 88px);
+  padding-right: clamp(14px, 4vw, 88px);
+}
+
+.menu_hidden {
+  transform: translateY(-100%);
+  display: none;
+  transition: none; /* Отключаем анимацию при загрузке */
+}
+
+.show {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.close_menu {
+  background-color: transparent;
+  border: none;
+}
+
+.menu_nav_row_1, .menu_nav_row_2 {
+  transition: color 0.2s ease, text-decoration-color 0.3s ease;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.menu_nav_row_1 {
+  color: white;
+  font-family: Manrope-SemiBold;
+}
+
+.menu_nav_row_2 {
+  color: rgba(255, 255, 255, 0.61);
+  font-family: Manrope-medium;
+}
+
+.menu_nav_row_1:hover, .menu_nav_row_2:hover {
+  color: #FF57FF;
+  text-decoration-color: #FF57FF;
+}
+
+@media (max-width: 576px) {
+  .header_btn {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu_nav_row_1, .menu_nav_row_2 {
+    font-size: 1.5rem;
+  }
+}
+.hero_section {
+  margin-top: 15rem;
+}
+
+.hero_main_h {
+  width: 88vw;
+}
+
+.hero_h2 {
+  font-size: 40px;
+  background: linear-gradient(-79deg, #FD39D3, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .hero_h2 {
+    font-size: 20px;
+  }
+}
+.gradient_h {
+  background: linear-gradient(82deg, #ff57ff 25%, #8c3ced 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-family: Manrope-bold;
+}
+
+.gradient_text {
+  background: linear-gradient(82deg, #ff57ff 25%, #8c3ced 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cases_section {
+  margin-top: 32rem;
+}
+
+@media (max-width: 768px) {
+  .cases_section {
+    margin-top: 10rem;
+  }
+}
+.case_grid {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  margin-top: 4vw;
+  gap: 3vw;
+}
+@media screen and (max-width: 1200px) {
+  .case_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .case_grid {
+    grid-template-columns: 1fr;
+    gap: 5vw;
+  }
+}
+
+.case_card {
+  box-sizing: border-box;
+  border: 1px solid #c536ef;
+  border-radius: 6px;
+  width: 28vw;
+  height: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow ease 0.3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .case_card {
+    width: 42vw;
+    height: 27vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .case_card {
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+.case_card:hover {
+  box-shadow: inset 0px 4px 107px 0px rgba(178, 61, 224, 0.47);
+}
+
+.case_card_p2, .case_card_p1 {
+  text-shadow: 2px 1px 3px #000000;
+}
+
+.case_card_p2 {
+  height: max-content;
+}
+
+#card1 {
+  background-image: url(/Img/grid_case/1.jpg);
+}
+
+#card2 {
+  background-image: url(/Img/grid_case/2.jpg);
+}
+
+#card3 {
+  background-image: url(/Img/grid_case/3.jpg);
+}
+
+#card4 {
+  background-image: url(/Img/grid_case/4.jpg);
+}
+
+#card5 {
+  background-image: url(/Img/grid_case/5.jpg);
+}
+
+#card6 {
+  background-image: url(/Img/grid_case/6.jpg);
+}
+
+.carousel {
+  margin-top: 4vw;
+  background-color: rgba(27, 10, 31, 0.262745098);
+  padding-left: clamp(14px, 4vw, 88px);
+  padding-right: clamp(14px, 4vw, 88px);
+}
+
+.carousel_naming {
+  height: max-content;
+  margin-top: 4rem;
+}
+
+.carousel_name {
+  font-family: Manrope-Regular;
+  color: white;
+}
+
+.carousel_surname {
+  font-family: Manrope-Regular;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel_testomoniral {
+  align-self: flex-end;
+  width: 50%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.carousel_p {
+  color: white;
+}
+
+.carousel_img {
+  width: 200px;
+  height: auto;
+}
+
+.custom-carousel-control-prev, .custom-carousel-control-next {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 100%;
+  background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.02) 7.671%, rgba(115, 113, 255, 0.04) 100%);
+  width: 4rem;
+  height: 4rem;
+  transition: all ease 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-carousel-control-prev:hover, .custom-carousel-control-next:hover {
+  border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.07) 7.671%, rgba(115, 113, 255, 0.07) 100%);
+}
+.custom-carousel-control-prev:hover .carousel_btn_icon, .custom-carousel-control-next:hover .carousel_btn_icon {
+  opacity: 1;
+}
+
+.carousel_btn_icon {
+  opacity: 0.5;
+  transition: opacity ease 0.4s;
+}
+
+.custom-carousel-control-prev {
+  transform: rotate(180deg);
+}
+
+.carousel_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.carousel_buttons {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel_container {
+    flex-direction: column;
+  }
+  .carousel_testomoniral {
+    align-self: unset;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .carousel_naming {
+    order: 3;
+  }
+  .carousel_name, .carousel_surname {
+    font-size: 1.5rem;
+  }
+  .carousel_buttons {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .custom-carousel-control-prev, .custom-carousel-control-next {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+.form_labeling {
+  margin-bottom: 7rem;
+  margin-top: 5rem;
+}
+
+.form_h2 {
+  color: white;
+  font-family: Manrope-medium;
+}
+
+.form_h2_margin {
+  margin-left: 10rem;
+}
+
+/* Настройки формы */
+.form_custom {
+  display: flex;
+  gap: 4rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.form_grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.form_col_drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 3;
+}
+
+.form-control, .form-select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  padding-left: 0;
+  padding-bottom: 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid #fff;
+}
+
+.form-control::placeholder, .form-label, .form-control, .form-control:focus, .form-select, .form-select:focus {
+  color: white;
+}
+
+.form-label, .form-control, .form-select, .submit_btn, .error-message {
+  font-family: Manrope-medium;
+}
+
+.form-control, .form-select, .submit_btn {
+  font-size: 1.2rem;
+}
+
+.form-label {
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.form_label_addition {
+  position: absolute;
+  transform: translateY(-20px);
+  font-family: Manrope-medium;
+  font-size: 0.9rem;
+}
+
+.form_star, .form_label_addition {
+  color: #FF57FF;
+}
+
+.submit_btn {
+  border: 2px solid rgb(197, 54, 239);
+  border-radius: 52.11px;
+  box-shadow: 0px 0px 22px 0px rgba(176, 102, 255, 0.15);
+  background: rgba(255, 87, 255, 0.08);
+  color: white;
+  font-family: Manrope-SemiBold;
+  letter-spacing: 0%;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.modal_button {
+  border: 2px solid rgb(197, 54, 239);
+  border-radius: 52.11px;
+  box-shadow: 0px 0px 22px 0px rgba(176, 102, 255, 0.15);
+  background: rgba(255, 87, 255, 0.08);
+  color: white;
+  font-family: Manrope-SemiBold;
+  letter-spacing: 0%;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+
+.modal_button:hover {
+  background: rgba(255, 0, 255, 0.59);
+  border: 2px solid rgb(197, 54, 239);
+}
+
+.submit_btn:hover {
+  background: rgba(255, 0, 255, 0.59);
+}
+
+.error-message {
+  color: #FF4D4D;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  display: none; /* Скрыто по умолчанию */
+}
+
+.form_cell.error .error-message {
+  display: block;
+}
+.form_cell.error .form-req {
+  color: #FF4D4D;
+}
+.form_cell.error .form-control {
+  border-color: #FF4D4D;
+}
+
+.modal-content {
+  background-color: #1A001D;
+  color: white;
+}
+
+.btn-close {
+  filter: invert(100%); /* Делает крестик белым */
+  opacity: 1; /* Полностью видимый крестик */
+}
+
+.btn-close:hover {
+  filter: invert(100%) brightness(80%); /* При наведении - немного темнее */
+}
+
+@media screen and (max-width: 1200px) {
+  .form_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form_col_drop {
+    grid-area: 4/1/4/3;
+  }
+  .form_custom {
+    flex-direction: column;
+    margin: 0;
+  }
+  .form_col_drop {
+    width: 100%;
+    gap: 3rem;
+  }
+  .form-label, .form-control, .form-select, .submit_btn, .error-message {
+    font-size: 1.2rem;
+  }
+  .submit_btn {
+    margin-top: 2rem;
+  }
+  .form_h2_margin {
+    margin-left: 0;
+  }
+  .submit_btn {
+    width: 60%;
+    align-self: center;
+  }
+  .form_mail_adapt {
+    display: unset;
+  }
+  .form_mail {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .form_grid {
+    grid-template-columns: 1fr;
+  }
+  .form_col_drop {
+    grid-area: auto;
+  }
+  .form_labeling {
+    text-align: center;
+  }
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 5rem;
+  border: 1px solid rgb(255, 87, 255);
+  border-radius: 2rem;
+  background: rgb(255, 87, 255);
+  background: linear-gradient(180deg, rgba(255, 87, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 5rem 10rem;
+  gap: 1rem;
+}
+
+.footer_col {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.footer_col_h, .footer_col_p, .footer_col_h2 {
+  color: white;
+}
+
+.footer_col_h {
+  font-family: Manrope-bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer_col_h2 {
+  font-family: Manrope-SemiBold;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.footer_col_img {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer_col_p {
+  font-family: Manrope-Regular;
+  margin: 0;
+}
+
+.footer_button {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.12) 8.255%, rgba(115, 113, 255, 0.12));
+  cursor: pointer;
+  color: white;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  width: max-content;
+  align-self: flex-end;
+  padding: 1rem 2.5rem;
+}
+
+.footer_button:hover {
+  background-color: rgba(255, 255, 255, 0.1921568627);
+}
+
+.footer_logo {
+  width: clamp(97px, 14vw, 242px);
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 4rem 2rem;
+    gap: 4rem;
+  }
+  .footer_col_h {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .footer_col {
+    align-items: center;
+  }
+  .footer_col_h2 {
+    text-align: center;
+  }
+  .footer_logo {
+    width: 18rem;
+  }
+}
+.game_section_col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.games_p1, .games_p2, .games_p3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.games_card {
+  border: 1px solid #FF57FF;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  background-image: url(/Img/games/games_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.games_h1 {
+  width: 60%;
+}
+
+.games_h2 {
+  background: linear-gradient(82deg, #ff57ff 25%, #8c3ced 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-family: TTFirsNeue-Regular;
+}
+
+.games_h3 {
+  text-shadow: 0px 0px 18.88px rgba(255, 225, 149, 0.81);
+  color: rgb(255, 225, 149);
+  font-family: TTFirsNeue-Regular;
+}
+
+.games_h3_bold {
+  font-family: TTFirsNeue-DemiBold;
+}
+
+.game_section_col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.games_p1, .games_p2, .games_p3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.games_card {
+  position: relative;
+  border: 1px solid #FF57FF;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  background-image: url(/Img/games/games_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.games_hover_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 0, 33, 0.8); /* Полупрозрачный черный фон */
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.games_card img, .games_card h2, .games_card h3 {
+  transition: transform 0.3s ease;
+}
+
+.games_card:hover img,
+.games_card:hover h2,
+.games_card:hover h3,
+.games_card:hover button {
+  transform: scale(1.05);
+}
+
+/* Показываем блок с дополнительной информацией при наведении */
+.games_card:hover .games_hover_content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Пример стиля для текста внутри блока при hover */
+.games_hover_text {
+  font-family: TTFirsNeue-Regular;
+  text-align: left;
+  padding: 2rem;
+}
+
+.games_button_hover, .games_button {
+  width: max-content;
+  border: 3px solid rgb(119, 221, 255);
+  border-radius: 16px;
+  box-shadow: 0px 0px 11px 0px rgba(160, 225, 247, 0.51);
+  background-color: transparent;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: TTFirsNeue-Regular;
+  text-shadow: 0px 0px 21px rgba(255, 87, 255, 0.59);
+  color: rgb(255, 87, 255);
+  transition: all 0.3s ease;
+}
+
+.games_button_hover:hover {
+  background-color: rgba(255, 87, 255, 0.2);
+  color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  .games_h1 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .games_p1, .games_p2, .games_p3 {
+    font-size: 1.2rem;
+  }
+}
+.accordion {
+  animation: unset;
+  height: max-content;
+  display: grid;
+  grid-template-rows: repeat(5, max-content);
+  gap: 2vw;
+  justify-content: center;
+  margin-top: 5vw;
+}
+
+.accordion_element {
+  background: rgba(255, 87, 255, 0.06);
+  animation: unset;
+  width: 80vw;
+  box-sizing: content-box;
+  border-radius: 1vw;
+  padding: 2vw 5vw;
+  border: 2px solid transparent;
+  transition: max-height ease 1s, border-color ease 0.3s, background-color ease 0.3s;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .accordion_element {
+    padding: 3vw 5vw;
+    border-radius: 2.5vw;
+  }
+}
+
+.accordion_element:hover {
+  background: rgba(255, 87, 255, 0.116);
+}
+
+.accordion_element.active {
+  border: 2px solid rgb(197, 54, 239);
+}
+
+.accordion_base {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 2rem;
+  width: 80vw;
+  text-align: left;
+  font-family: Manrope-medium;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .accordion_base {
+    font-size: 3vw;
+  }
+}
+
+.accordion_tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion_icon {
+  fill: #FF57FF;
+  transition: all ease 0.4s;
+  width: 4vw;
+  transform: translateY(0.35vw);
+}
+@media screen and (max-width: 900px) {
+  .accordion_icon {
+    width: 6vw;
+  }
+}
+
+.accordion_icon.active {
+  fill: #FFFFFF;
+  transform: rotate(135deg);
+  animation: unset;
+}
+
+.accordion_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height ease 0.7s;
+  animation: unset;
+  color: white;
+}
+
+.content_container {
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+@media screen and (max-width: 900px) {
+  .content_container {
+    flex-direction: column;
+  }
+}
+
+.content_container_h_container {
+  display: flex;
+  flex-direction: column;
+  font-family: Manrope-Regular;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .content_container_h_container {
+    font-size: 1.2rem;
+  }
+}
+
+#margened {
+  margin-top: 0.8vw;
+}
+
+.content_container_h {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+.content_container_p_container {
+  font-size: 1.2rem;
+  font-family: Manrope-Regular;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .content_container_p_container {
+    margin-top: 3vw;
+    font-size: 1.1rem;
+  }
+}
+
+.content_container_p_ul {
+  list-style-position: inside;
+}
+
+.content_container_p_li {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  margin-top: 0.5vw;
+}
+
+.gift_card_section {
+  margin-top: 10rem;
+}
+
+.gift_card {
+  border: 1px solid rgb(197, 54, 239);
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.03) 8.254%, rgba(115, 113, 255, 0.07) 100%);
+  background-image: url(/Img/BGs/gift_bg.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gift {
+  position: absolute;
+  bottom: 0;
+  right: 8vw;
+  width: 600px;
+}
+
+.gift_dummy {
+  align-self: flex-end;
+  visibility: hidden;
+  width: 500px;
+}
+
+.gift_card_h {
+  background: linear-gradient(82deg, #ff57ff 25%, #8c3ced 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: Manrope-bold;
+  font-size: 3rem;
+}
+
+.gift_card_p {
+  color: #B4B4B4;
+  font-family: Manrope-medium;
+  font-size: 1.2rem;
+}
+
+.gift_card_button {
+  border: 2px solid rgb(197, 54, 239);
+  border-radius: 52.11px;
+  box-shadow: 0px 0px 22px 0px rgba(176, 102, 255, 0.15);
+  background: rgba(255, 87, 255, 0.08);
+  color: white;
+  font-family: Manrope-SemiBold;
+  letter-spacing: 0%;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem 4rem;
+}
+
+.gift_card_button:hover {
+  background: rgba(255, 0, 255, 0.59);
+}
+
+.gift_text_wrapper {
+  display: block;
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .gift_card {
+    background-image: unset;
+    background-size: 1000px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 4rem;
+    padding-top: 4rem;
+  }
+  .gift_text_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 0;
+  }
+  .gift_card_button {
+    border: 2px solid rgb(197, 54, 239);
+    border-radius: 52.11px;
+    box-shadow: 0px 0px 22px 0px rgba(176, 102, 255, 0.15);
+    background: rgba(255, 87, 255, 0.08);
+    color: white;
+    font-family: Manrope-SemiBold;
+    letter-spacing: 0%;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    width: max-content;
+  }
+  .gift_card_h {
+    font-size: 3rem;
+  }
+  .gift_card_p {
+    font-size: 2rem;
+  }
+  .gift {
+    position: relative;
+    width: 300px;
+    right: 0;
+  }
+  .gift_dummy {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

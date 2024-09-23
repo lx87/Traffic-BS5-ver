@@ -1,0 +1,121 @@
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar_logo{
+    width: clamp(97px, 14vw, 242px);
+}
+
+.nav_link{
+    transition: color 0.2s ease, text-decoration-color 0.3s ease;
+    color: #D2D2D2;
+    text-decoration: underline;
+    text-decoration-color: $bg;
+    font-size: 1.5rem;
+}
+
+.nav_link:hover{
+    color: $main_accent;
+    text-decoration-color: $main_accent;
+}
+
+.menu_btn{
+    background-color: transparent;
+    border: none;
+    width: clamp(47px, 6rem ,96px);
+    height: clamp(48px, 6rem ,77px);
+    transform: translateX(10px);
+}
+
+
+.menu_btn_icon{
+    stroke: white;
+    transition: stroke .2s ease;
+    pointer-events: none;
+}
+
+.menu_btn:hover{
+    .menu_btn_icon{
+        stroke: $main_accent
+    }
+}
+
+
+
+.header_btn {
+   @include main_button;
+   padding: .6rem 1.8rem;
+   font-size: 16px;
+}
+
+.header_btn:hover {
+    @include main_hover;
+}
+
+//menu---------------------------------------------------------------------------------------------------------------------menu--------------------------------------------------------------------------------------------------
+
+.menu_container {
+    height: max-content;
+    background-color: #1B0F19;
+    z-index: 20;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: all ease .6s;
+    visibility: hidden;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    @include base_padding;
+}
+
+.menu_hidden {
+    transform: translateY(-100%);
+    display: none;
+    transition: none; /* Отключаем анимацию при загрузке */
+}
+
+.show {
+    transform: translateY(0);
+    visibility: visible;
+}
+.close_menu{
+    background-color: transparent;
+    border: none;
+}
+
+
+.menu_nav_row_1, .menu_nav_row_2{
+    transition: color 0.2s ease, text-decoration-color 0.3s ease;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.menu_nav_row_1{
+    color: white;
+    font-family: $man_semi;
+}
+
+.menu_nav_row_2{
+    color: rgba(255, 255, 255, 0.61);
+    font-family: $man_med;
+}
+
+.menu_nav_row_1:hover, .menu_nav_row_2:hover{
+    color: $main_accent;
+    text-decoration-color: $main_accent;
+}
+
+@media (max-width: 576px) {
+.header_btn {
+    font-size: 11px;
+ }
+}
+
+@media screen and (max-width: 992px) {
+    
+    .menu_nav_row_1, .menu_nav_row_2{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,114 @@
+.carousel{
+    margin-top: 4vw;
+    background-color: #1b0a1f43;
+    @include base_padding;
+}
+
+.carousel_naming{
+    height: max-content;
+    margin-top: 4rem;
+}
+
+.carousel_name{
+    font-family: $man_reg;
+    color: white;
+} 
+
+.carousel_surname{
+    font-family: $man_reg;
+    color: rgba(255, 255, 255, 0.5)
+} 
+
+
+.carousel_testomoniral{
+    align-self: flex-end;
+    width: 50%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.carousel_p{
+    color: white;
+}
+
+.carousel_img{
+    width: 200px;
+    height: auto;
+}
+
+.custom-carousel-control-prev, .custom-carousel-control-next{
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 100%;
+    background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.02) 7.671%,rgba(115, 113, 255, 0.04) 100%);
+    width: 4rem;
+    height: 4rem;
+    transition: all ease .4s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.custom-carousel-control-prev:hover, .custom-carousel-control-next:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.07) 7.671%,rgba(115, 113, 255, 0.07) 100%);
+    .carousel_btn_icon{
+        opacity: 1;
+    }
+}
+
+.carousel_btn_icon{
+    opacity: .5;
+    transition: opacity ease .4s;
+}
+
+.custom-carousel-control-prev{
+    transform: rotate(180deg);
+}
+
+.carousel_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.carousel_buttons{
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel_container{
+        flex-direction: column;
+    }
+    .carousel_testomoniral{
+        align-self: unset;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .carousel_naming{
+        order: 3;
+    }
+    .carousel_name, .carousel_surname{
+       font-size: 1.5rem;
+    } 
+
+    .carousel_buttons{
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .custom-carousel-control-prev, .custom-carousel-control-next{ 
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  
+}

@@ -1,0 +1,21 @@
+.hero_section{
+    margin-top: 15rem;
+}
+
+.hero_main_h{
+    width: 88vw;
+}
+
+.hero_h2{
+    font-size: 40px; 
+    background: linear-gradient(-79deg, #FD39D3, #FFFFFF); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+@media (max-width: 768px) {
+    .hero_h2{
+        font-size: 20px;
+    }   
+}

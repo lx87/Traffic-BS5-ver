@@ -1,0 +1,104 @@
+.gift_card_section{
+    margin-top: 10rem;
+}
+
+
+
+.gift_card{
+    border: 1px solid rgb(197, 54, 239);
+    border-radius: 20px;
+    backdrop-filter: blur(18px);
+    background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.03) 8.254%,rgba(115, 113, 255, 0.07) 100%);
+    background-image: url(/Img/BGs/gift_bg.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gift{
+    position: absolute;
+    bottom: 0;
+    right: 8vw;
+    width: 600px;
+}
+
+.gift_dummy{
+    align-self: flex-end;
+    visibility: hidden;
+    width: 500px;
+}
+
+.gift_card_h{
+    @include gradient_h;
+    font-size: 3rem
+}
+.gift_card_p{
+    color: #B4B4B4;
+    font-family: $man_med;
+    font-size: 1.2rem;
+}
+.gift_card_button{
+    @include main_button;
+    padding: 1rem 4rem;
+}
+
+.gift_card_button:hover{
+    @include main_hover;
+}
+
+.gift_text_wrapper{
+    display: block;
+    margin-left: 5rem;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+    .gift_card{
+        background-image: unset;
+        background-size: 1000px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        text-align: center;
+        gap: 4rem;
+        padding-top: 4rem;
+    }
+
+    .gift_text_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+    }
+
+    .gift_card_button{
+        @include main_button;
+        width: max-content;
+    }
+
+    .gift_card_h{
+        font-size: 3rem;
+    }
+    .gift_card_p{
+        font-size: 2rem;
+    }
+    
+
+    .gift{
+        position: relative;
+        width: 300px;
+        right: 0;
+    }
+    
+    .gift_dummy{
+        display: none;
+    }
+}

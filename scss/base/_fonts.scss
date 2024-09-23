@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Manrope-Regular;
+    src: url(/fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: Manrope-Medium;
+    src: url(/fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: Manrope-SemiBold;
+    src: url(/fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Manrope-Bold;
+    src: url(/fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: Manrope-Light;
+    src: url(/fonts/Manrope-Light.ttf);
+}
+
+//manrope
+
+$man_reg: Manrope-Regular;
+
+$man_med: Manrope-medium;
+
+$man_semi: Manrope-SemiBold;
+
+$man_Bold: Manrope-bold;
+
+$man_light: Manrope-Light;
+
+
+@font-face {
+    font-family: Outfit-Black;
+    src: url(/fonts/Outfit-Black.ttf);
+}
+
+@font-face {
+    font-family: Outfit-Bold;
+    src: url(/fonts/Outfit-Bold.ttf);
+}
+
+a, button, p, h1, h2, h3, h4, h5{
+    font-family: manrope-regular;
+}
+
+
+
+//outfit
+
+$out_black: Outfit-Black;
+
+$out_bold: Outfit-Bold;
+
+@font-face {
+    font-family: TTFirsNeue-Regular;
+    src: url(/fonts/TTFirsNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: TTFirsNeue-Medium;
+    src: url(/fonts/TTFirsNeue-Medium.ttf);
+}
+
+@font-face {
+    font-family: TTFirsNeue-DemiBold;
+    src: url(/fonts/TTFirsNeue-DemiBold.ttf);
+}
+
+//firs
+
+$firs_reg: TTFirsNeue-Regular;
+
+$firs_medium: TTFirsNeue-Medium;
+
+$firs_demiBold: TTFirsNeue-DemiBold;

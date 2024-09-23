@@ -1,0 +1,20 @@
+// @import '~bootstrap/scss/bootstrap';
+//base
+@import './base/base';
+@import './base/mixins';
+@import './base/fonts';
+
+//main
+
+@import './pages/Main/navbar';
+@import './pages/Main/hero_section';
+@import './pages/Main/cases';
+@import './pages/Main/slider';
+@import './pages/Main/form';
+@import './pages/Main/footer';
+
+//services
+
+@import './pages/Services/games';
+@import './pages/Services/FAQ_accordion';
+@import './pages/Services/gift_card';

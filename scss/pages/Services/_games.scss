@@ -1,0 +1,149 @@
+.game_section_col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.games_p1, .games_p2, .games_p3{
+    color: white;
+    font-size: 2rem;
+}
+
+.games_card{
+    border: 1px solid $main_accent;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    background-image: url(/Img/games/games_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.games_h1{
+    width: 60%;
+}
+
+.games_h2{
+    background: linear-gradient(82deg, #ff57ff 25%, #8c3ced 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    text-transform: uppercase;
+    font-family: $firs_reg;
+}
+
+.games_h3{
+    text-shadow: 0px 0px 18.88px rgba(255, 225, 149, 0.81);
+    color: rgb(255, 225, 149);
+    font-family: $firs_reg;
+}
+
+.games_h3_bold{
+    font-family: $firs_demiBold;
+}
+
+.game_section_col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.games_p1, .games_p2, .games_p3{
+    color: white;
+    font-size: 2rem;
+}
+.games_card {
+    position: relative;
+    border: 1px solid $main_accent;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    background-image: url(/Img/games/games_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+}
+
+
+.games_hover_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 0, 33, 0.8); /* Полупрозрачный черный фон */
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+.games_card img, .games_card h2, .games_card h3 {
+    transition: transform 0.3s ease; 
+}
+
+.games_card:hover img,
+.games_card:hover h2,
+.games_card:hover h3,
+.games_card:hover button {
+    transform: scale(1.05); 
+}
+
+/* Показываем блок с дополнительной информацией при наведении */
+.games_card:hover .games_hover_content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Пример стиля для текста внутри блока при hover */
+.games_hover_text {
+    font-family: $firs_reg;
+    text-align: left;
+    padding: 2rem;
+}
+
+.games_button_hover, .games_button {
+    width: max-content;
+    border: 3px solid rgb(119, 221, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 11px 0px rgba(160, 225, 247, 0.51);
+    background-color: transparent;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: $firs_reg;
+    text-shadow: 0px 0px 21px rgba(255, 87, 255, 0.59);
+    color: rgb(255, 87, 255);
+    transition: all .3s ease;
+}
+
+.games_button_hover:hover {
+    background-color: rgba(255, 87, 255, 0.2);
+    color: white;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .games_h1{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .games_p1, .games_p2, .games_p3{
+        font-size: 1.2rem;
+    }
+}
