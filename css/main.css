@@ -914,6 +914,17 @@ a, button, p, h1, h2, h3, h4, h5 {
     font-size: 1.2rem;
   }
 }
+.accordion_faq_p {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 900px) {
+  .accordion_faq_p {
+    font-size: 1rem;
+  }
+}
+
 .accordion {
   animation: unset;
   height: max-content;
@@ -962,7 +973,7 @@ a, button, p, h1, h2, h3, h4, h5 {
 }
 @media screen and (max-width: 900px) {
   .accordion_base {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1230,4 +1241,16 @@ a, button, p, h1, h2, h3, h4, h5 {
 
 .custom-pills .nav-link.active {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Тень для активной кнопки */
+}
+
+.custom-badge {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.07) 8.179%, rgba(115, 113, 255, 0.07) 100%);
+  border-radius: 50px;
+  color: #fff;
+  margin: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
 }/*# sourceMappingURL=main.css.map */

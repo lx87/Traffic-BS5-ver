@@ -1,12 +1,21 @@
 $acc_font_size_button: 2.1rem;
-$acc_font_size_button_adapt: 1.5rem;
+$acc_font_size_button_adapt: 1.1rem;
 
-$acc_font_size_h: 2rem;
+$acc_font_size_h: 4rem;
 $acc_font_size_p: 1.2rem;
 $acc_font_size_h_adapt: 1.2rem;
 $acc_font_size_p_adapt: 1.1rem;
 
 $acc_width: 80vw;
+
+.accordion_faq_p{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    @media screen and (max-width: 900px) { 
+        font-size: 1rem;
+    }
+}
 
 
 .accordion{ 
@@ -59,7 +68,7 @@ $acc_width: 80vw;
     width: $acc_width;
     text-align: left;
 
-    font-family: $man_med ;
+    font-family: $man_med;
     cursor: pointer;
     @media screen and (max-width: 900px) { 
         font-size: $acc_font_size_button_adapt;
