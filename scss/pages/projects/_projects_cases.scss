@@ -1,0 +1,65 @@
+.cases_section_projects{
+    margin-top: 8rem;
+}
+
+#pillNav2{
+    grid-area: 1 / 1 / 2 / 4;
+    font-size: 1.2rem;
+}
+
+.case_grid_projects{
+    display: grid;
+    grid-template-rows: max-content 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4vw;
+    gap: 20px;
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        #pillNav2{
+            grid-area: 1 / 1 / 1 / 3;
+        }
+    }
+    
+    @media screen and (max-width: 992px) {
+        grid-template-columns: 1fr;
+        #pillNav2{
+            grid-area: 1 / 1 / 1 / 2;
+        }
+    }
+
+}
+
+.card_hidden{
+    display: none;
+}
+
+.custom-pills .nav-link {
+    background-color: rgba(255, 255, 255, 0.135);
+    color: white; 
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .custom-pills .nav-link.active {
+    background-color: #ff00ff5e;
+    color: white; 
+    border-color: #C536EF; 
+  }
+
+//   .custom-pills .nav-link:hover {
+  
+//   }
+
+  .custom-btn {
+    padding: 10px 20px; 
+  }
+
+  .custom-pills .nav-link:not(.active) {
+    background-color: #1a1a1a; 
+    color: white;
+  }
+
+  .custom-pills .nav-link.active {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Тень для активной кнопки */
+  }

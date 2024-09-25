@@ -28,16 +28,14 @@
     display: grid;
     grid-template-columns: repeat(3, max-content);
     margin-top: 4vw;
-    gap: 3vw;
+    gap: 20px;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: 1fr 1fr;
-        gap: 5vw;
     }
     
     @media screen and (max-width: 992px) {
         grid-template-columns: 1fr;
-        gap: 5vw;
     }
 
 }

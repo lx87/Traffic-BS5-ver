@@ -99,3 +99,35 @@ document.getElementById('email').addEventListener('input', function() {
     }
 });
 
+
+//tabs
+
+
+const tab_pill = document.querySelectorAll('.custom-btn');
+const grid_cards = document.querySelectorAll('.case_card');
+
+tab_pill.forEach(function(element) {
+    element.addEventListener('click', function() {
+
+        let card_category = this.dataset.tab; // Получаем категорию карточек из data-tab
+
+        // Скрываем все карточки сначала
+        grid_cards.forEach(function(card) {
+            card.classList.add('card_hidden');
+        });
+
+        // Если нажата кнопка с категорией "все"
+        if (card_category === 'category_all') {
+            // Показываем все карточки
+            grid_cards.forEach(function(card) {
+                card.classList.remove('card_hidden'); // Убираем класс скрытия у всех карточек
+            });
+        } else {
+            // Показываем только выбранные карточки с нужным классом
+            let selected_cards = document.querySelectorAll('.' + card_category);
+            selected_cards.forEach(function(card) {
+                card.classList.remove('card_hidden'); // Убираем класс скрытия у выбранных карточек
+            });
+        }
+    });
+});

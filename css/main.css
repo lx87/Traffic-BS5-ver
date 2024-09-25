@@ -289,18 +289,16 @@ a, button, p, h1, h2, h3, h4, h5 {
   display: grid;
   grid-template-columns: repeat(3, max-content);
   margin-top: 4vw;
-  gap: 3vw;
+  gap: 20px;
 }
 @media screen and (max-width: 1200px) {
   .case_grid {
     grid-template-columns: 1fr 1fr;
-    gap: 5vw;
   }
 }
 @media screen and (max-width: 992px) {
   .case_grid {
     grid-template-columns: 1fr;
-    gap: 5vw;
   }
 }
 
@@ -1170,4 +1168,66 @@ a, button, p, h1, h2, h3, h4, h5 {
   .gift_dummy {
     display: none;
   }
+}
+.cases_section_projects {
+  margin-top: 8rem;
+}
+
+#pillNav2 {
+  grid-area: 1/1/2/4;
+  font-size: 1.2rem;
+}
+
+.case_grid_projects {
+  display: grid;
+  grid-template-rows: max-content 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4vw;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .case_grid_projects {
+    grid-template-columns: 1fr 1fr;
+  }
+  .case_grid_projects #pillNav2 {
+    grid-area: 1/1/1/3;
+  }
+}
+@media screen and (max-width: 992px) {
+  .case_grid_projects {
+    grid-template-columns: 1fr;
+  }
+  .case_grid_projects #pillNav2 {
+    grid-area: 1/1/1/2;
+  }
+}
+
+.card_hidden {
+  display: none;
+}
+
+.custom-pills .nav-link {
+  background-color: rgba(255, 255, 255, 0.135);
+  color: white;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-pills .nav-link.active {
+  background-color: rgba(255, 0, 255, 0.368627451);
+  color: white;
+  border-color: #C536EF;
+}
+
+.custom-btn {
+  padding: 10px 20px;
+}
+
+.custom-pills .nav-link:not(.active) {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.custom-pills .nav-link.active {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Тень для активной кнопки */
 }/*# sourceMappingURL=main.css.map */
