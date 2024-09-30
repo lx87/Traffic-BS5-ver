@@ -22,6 +22,12 @@ $main_fill: linear-gradient(118.37deg, rgb(255, 87, 255),rgb(140, 60, 237));
     background-repeat: no-repeat;
 }
 
+.bg_about{
+    background-image: url(/Traffic-BS5-ver/Img/BGs/About\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @mixin base_padding{
     padding-left: clamp(14px, 4vw ,88px);
     padding-right: clamp(14px, 4vw ,88px);

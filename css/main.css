@@ -15,6 +15,12 @@
   background-repeat: no-repeat;
 }
 
+.bg_about {
+  background-image: url(/Traffic-BS5-ver/Img/BGs/About\ bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 input {
   outline: 0;
 }
@@ -1253,4 +1259,66 @@ a, button, p, h1, h2, h3, h4, h5 {
   margin: 0.5rem;
   text-align: center;
   white-space: nowrap;
+}
+
+.about_us_hero_h1 {
+  font-size: 5rem;
+}
+
+.about_us_hero {
+  margin-top: 10rem;
+}
+
+.about_us_hero p {
+  font-size: 3rem;
+  background: linear-gradient(-79deg, #FD39D3, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: Manrope-Regular;
+}
+
+.about_us_card {
+  margin-top: 3rem;
+  gap: 3rem;
+  padding: 4rem 6rem;
+  border-radius: 20px;
+  backdrop-filter: blur(7px);
+  /* 2nd-btn_style */
+  background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.07) 8.225%, rgba(115, 113, 255, 0.07) 100%);
+}
+
+.about_us_card_h1 {
+  color: white;
+  font-family: Manrope-Regular;
+  font-size: 2rem;
+}
+
+.about_us_card_h2 {
+  margin-top: 4rem;
+  color: white;
+  font-family: Manrope-medium;
+}
+
+.about_us_card_h3 {
+  color: #838383;
+  font-family: Manrope-Regular;
+}
+
+.card_ava {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .about_us_hero p {
+    font-size: 3rem;
+  }
+  .about_us_card_h1 {
+    color: white;
+    font-family: Manrope-Regular;
+    font-size: 1.2rem;
+  }
+  .adapt_br {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
