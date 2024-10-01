@@ -1313,10 +1313,13 @@ a, button, p, h1, h2, h3, h4, h5 {
   .about_us_hero p {
     font-size: 3rem;
   }
+  .about_us_card {
+    padding: 2rem 3rem;
+  }
   .about_us_card_h1 {
     color: white;
     font-family: Manrope-Regular;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .adapt_br {
     display: none;
