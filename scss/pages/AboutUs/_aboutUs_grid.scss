@@ -30,7 +30,7 @@
 
 .AboutUs_grid_p{
     text-align: left;
-    color: white;
+    color: #EEEEEE;
     margin-top: 1rem;
     font-size: 2rem;
 }  
@@ -59,12 +59,13 @@
         align-self: center;
     }
     .AboutUs_grid_p{
-        margin-top: 1rem;
-        font-size: 1.6rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        line-height: 3rem;
     }
     .AboutUs_grid_h{
-        font-size: 1.8rem;
-        margin-top: 2rem;
+        font-size: 2.2rem;
+        margin-top: 3rem;
     }
     .aboutUs_h{
         font-size: 3rem;
@@ -74,11 +75,11 @@
 
 @media screen and (max-width: 900px) { 
     .AboutUs_grid_p{
-        margin-top: 1rem;
-        font-size: 1rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
     }
     .AboutUs_grid_h{
-        font-size: 1.2rem;
-        margin-top: 2rem;
+        font-size: 2.8rem;
+        margin-top: 3rem;
     }
 }

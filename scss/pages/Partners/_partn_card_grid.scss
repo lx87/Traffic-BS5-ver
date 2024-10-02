@@ -1,0 +1,136 @@
+.partn_grid_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1000px;
+    column-gap: 6rem;
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+}
+
+.partn_main_h{
+    margin-top: 10rem;
+}
+
+.partn_h_section{
+    margin-top: 20rem;
+}
+.partn_card{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.07) 7.559%,rgba(115, 113, 255, 0.07) 100%);
+    border-radius: 20px;
+    padding: 3rem 1rem;
+    border: 1px solid transparent;
+    transition: border .2s ease;
+}
+
+.partn_card:hover{
+    border: 1px solid #C536EF;
+}
+.partn_card_h{
+    color: white;
+    font-family: $man_med;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+.partn_ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+}
+.partn_li{
+    color: white;
+    font-family: $man_med;
+    font-size: 1.4rem;
+}
+
+#partn_card_1{
+    align-self: start;
+}
+#partn_card_2{
+    align-self: center;
+}
+#partn_card_3{
+    align-self: end;
+}
+
+.adv_section{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+.adv_p{
+    color: white;
+    font-family: $man_med;
+    font-size: 1.4rem;
+    width: 30%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.adv_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.07) 7.559%,rgba(115, 113, 255, 0.07) 100%);
+    border: 1px solid #C536EF;
+    padding: 1rem 4rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.adv_card_p{
+    color: white;
+    font-size: 1rem;
+}
+
+.adv_card_p_colorized{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .partn_grid_cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 0;
+        margin-top: 10rem;
+        margin-bottom: 4rem;
+        row-gap: 2rem;
+    }
+    .partn_card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(135.31deg, rgba(255, 255, 255, 0.07) 7.559%,rgba(115, 113, 255, 0.07) 100%);
+        border-radius: 20px;
+        padding: 3rem 1rem;
+        border: 1px solid transparent;
+        transition: border .2s ease;
+    }
+    .adv_section{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+    .adv_p{
+        width: 100%;
+    }
+    .adv_card{
+        padding: 1rem 4rem;
+        width: 90%;
+    }
+    .adv_p{
+        font-size: 1.2rem;
+        width: 90%;
+    }
+    .adv_card_p_colorized{
+        font-size: 1.2rem;
+    }
+    .partn_main_h{
+        margin-top: 1rem;
+    }
+}
