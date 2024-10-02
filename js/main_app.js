@@ -131,3 +131,25 @@ tab_pill.forEach(function(element) {
         }
     });
 });
+
+const tab_pill_digest = document.querySelectorAll('.custom-btn_digest');
+const card_digest = document.querySelectorAll('.digest_card');
+
+tab_pill_digest.forEach(function(element) {
+    element.addEventListener('click', function() {
+
+        let card_category = this.dataset.tab; // Получаем категорию карточек из data-tab
+
+        // console.log(card_category)
+
+        card_digest.forEach(function(card) {
+            card.classList.add('card_hidden');
+        });
+
+        // Показываем только выбранные карточки с нужным классом
+        let selected_cards = document.querySelectorAll('.' + card_category);
+        selected_cards.forEach(function(card) {
+            card.classList.remove('card_hidden'); // Убираем класс скрытия у выбранных карточек
+        });
+    });
+});

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bs5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- main -->
+    <link rel="stylesheet" href="/Traffic-BS5-ver/css/main.css">
+    <!-- fav -->
+    <link rel="shortcut icon" href="/Traffic-BS5-ver/Img/favicon/android-chrome-192x192.png" type="image/x-icon">
+
+    <title>News</title>
+</head>
+<body>
+    <div class="menu_container menu_hidden container-fluid pb-5" id="menu_container">
+        <div class="container-fluid row justify-content-between align-items-center">
+            <a class="navbar-brand col-auto" href="">
+                <img class="navbar_logo" src="/Traffic-BS5-ver/Img/logos/Main_logo.svg" alt="Logo">
+            </a>
+            <div class="col-auto">
+                <button id="close_menu" class="close_menu ms-1 ms-lg-3 ms-xl-4 ms-xxl-5"> <img src="/Traffic-BS5-ver/Img/icons/close_menu.png" alt="Close menu"></button>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 pt-5 d-flex flex-column align-items-center">
+            <div class="row w-75 text-center row-gap-4">
+                <a href="/Traffic-BS5-ver/index.html" class="col-6 col-xxl-3 menu_nav_row_1 fw-medium">Главная</a>
+                <a href="/Traffic-BS5-ver/pages/services.html" class="col-6 col-xxl-3 menu_nav_row_1 fw-medium">Услуги</a>
+                <a href="/Traffic-BS5-ver/pages/projects.html" class="col-6 col-xxl-3 menu_nav_row_1 fw-medium">Кейсы</a>
+                <a href="/Traffic-BS5-ver/pages/AboutUs.html" class="col-6 col-xxl-3 menu_nav_row_1 fw-medium">О нас</a>
+
+                <a href="/Traffic-BS5-ver/pages/FAQ.html" class="col-6 col-xxl-3 menu_nav_row_2">FAQ</a>
+                <a href="/Traffic-BS5-ver/pages/News.html" class="col-6 col-xxl-3 menu_nav_row_2">Дайджест</a>
+               <a href="/Traffic-BS5-ver/pages/Partners.html#contact_anchor" class="col-6 col-xxl-3 menu_nav_row_2">Контакты</a>
+                <a href="/Traffic-BS5-ver/pages/Partners.html" class="col-6 col-xxl-3 menu_nav_row_2">Партнёрам</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper pt-3 pt-lg-1 pt-xl-2 pt-xxl-4">
+        <div class="nav_wrap p-0 container-fluid d-flex flex-column align-items-center">
+            <nav class="w-100 justify-content-between align-items-center row">
+        
+                <a class="navbar-brand col-auto m-0 p-0" href="/Traffic-BS5-ver/index.html">
+                    <img class="navbar_logo" src="/Traffic-BS5-ver/Img/logos/Main_logo.svg" alt="Logo">
+                </a>
+                <div class="d-none gap-3 m-0 p-0 d-xxl-flex col-auto" id="navbarNav">
+                    <a class="nav_link fw-medium" href="/Traffic-BS5-ver/index.html"> Главная</a>
+                    <a class="nav_link fw-medium" href="/Traffic-BS5-ver/pages/services.html">Услуги</a>
+                    <a class="nav_link fw-medium" href="/Traffic-BS5-ver/pages/projects.html">Кейсы</a>
+                    <a class="nav_link fw-medium" href="/Traffic-BS5-ver/pages/AboutUs.html">О нас</a>
+                </div>
+                <div class="col-auto m-0 p-0">
+                    <button class="header_btn">Заполнить бриф</button>
+                    <button class="menu_btn ms-0 ms-lg-2 ms-xl-4 ms-xxl-5" id="open_menu">
+                        <svg class="menu_btn_icon_base" width="" height="" viewBox="0 0 96 77" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path class="menu_btn_icon" d="M18 33H78" stroke=""  stroke-width="2.6"/>
+                            <path class="menu_btn_icon" d="M18 44H78" stroke=""   stroke-width="2.6"/>
+                        </svg>
+                    </button>
+                  </div>
+            </nav>
+        </div>
+        <section class="cases_section_projects container-fluid d-flex flex-column align-items-center p-0">
+            <h1 class="gradient_h display-1 align-self-start">Дайджест</h1>
+            <div class="case_grid_projects">
+                <ul class="nav nav-pills nav-fill gap-2 p-1 small custom-pills-digest rounded-5 shadow-sm" id="pillNav2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_adv" data-bs-toggle="tab" type="button" role="tab">#Контекстная реклама</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_copy" data-bs-toggle="tab" type="button" role="tab">#Копирайтинг</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_site" data-bs-toggle="tab" type="button" role="tab">#Сайты</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_metr" data-bs-toggle="tab" type="button" role="tab">#Метрика</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_game" data-bs-toggle="tab" type="button" role="tab">#Геймификация</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_target" data-bs-toggle="tab" type="button" role="tab" >#Таргетированная реклама</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_smm" data-bs-toggle="tab" type="button" role="tab" >#SMM</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_sales" data-bs-toggle="tab" type="button" role="tab" >#Продажи</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_messages" data-bs-toggle="tab" type="button" role="tab" >#Рассылки</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 custom-btn_digest" data-tab="category_vid" data-bs-toggle="tab" type="button" role="tab" >#Видео</button>
+                    </li>
+                </ul>
+                <div class="digest_card p-4 category_adv" id="card1_dig">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5">
+                        Как создавать и <br>
+                        использовать лендинги: <br>
+                        разбор с примерами
+                    </p>
+                    <div class="container-fluid p-0 d-flex justify-content-between align-items-center  ">
+                        <p class="case_card_p2 m-0 fs-6 color_span">12 августа 2022</p>
+                        <a href="" class="case_card_button"> <img src="/Traffic-BS5-ver/Img/icons/arrow.svg" alt=""> </a>
+                    </div>
+                </div>
+                <div class="digest_card p-4 category_copy" id="card2_dig">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5">
+                        Дорожная карта: подробное <br>
+                        объяснение с примерами и <br>
+                        шаблонами
+                    </p>
+                    <div class="container-fluid p-0 d-flex justify-content-between align-items-center ">
+                        <p class="case_card_p2 m-0 fs-6 color_span">15 августа 2022</p>
+                        <a href="" class="case_card_button"> <img src="/Traffic-BS5-ver/Img/icons/arrow.svg" alt=""> </a>
+                    </div>
+                </div>
+                <div class="digest_card p-4 category_site" id="card3_dig">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5">
+                        Project Management Office. <br>
+                        В чем польза и как его внедрить?
+                    </p>
+                    <div class="container-fluid p-0 d-flex justify-content-between align-items-center ">
+                        <p class="case_card_p2 m-0 fs-6 color_span">10 августа 2022</p>
+                        <a href="" class="case_card_button"> <img src="/Traffic-BS5-ver/Img/icons/arrow.svg" alt=""> </a>
+                    </div>
+                </div>
+                <div class="digest_card p-4 bg-dark category_metr">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5 placeholder-glow">
+                        <span class="placeholder col-6"></span> <br>
+                        <span class="placeholder col-4"></span>
+                    </p>
+                    <p class="text-white">Метрика</p>
+                    <div class="container-fluid p-0">
+                        <p class="case_card_p2 m-0 text-white fs-6 placeholder-glow">
+                            <span class="placeholder col-7"></span> <br>
+                            <span class="placeholder col-5"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="digest_card p-4 bg-dark category_target">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5 placeholder-glow">
+                        <span class="placeholder col-6"></span> <br>
+                        <span class="placeholder col-4"></span>
+                    </p>
+                    <p class="text-white">Тагретирование</p>
+                    <div class="container-fluid p-0">
+                        <p class="case_card_p2 m-0 text-white fs-6 placeholder-glow">
+                            <span class="placeholder col-7"></span> <br>
+                            <span class="placeholder col-5"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="digest_card p-4 bg-dark category_game">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5 placeholder-glow">
+                        <span class="placeholder col-6"></span> <br>
+                        <span class="placeholder col-4"></span>
+                    </p>
+                    <p class="text-white">Геймификация</p>
+                    <div class="container-fluid p-0">
+                        <p class="case_card_p2 m-0 text-white fs-6 placeholder-glow">
+                            <span class="placeholder col-7"></span> <br>
+                            <span class="placeholder col-5"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="digest_card p-4 bg-dark category_smm">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5 placeholder-glow">
+                        <span class="placeholder col-6"></span> <br>
+                        <span class="placeholder col-4"></span>
+                    </p>
+                    <p class="text-white">СММ</p>
+                    <div class="container-fluid p-0">
+                        <p class="case_card_p2 m-0 text-white fs-6 placeholder-glow">
+                            <span class="placeholder col-7"></span> <br>
+                            <span class="placeholder col-5"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="digest_card p-4 bg-dark category_sales">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5 placeholder-glow">
+                        <span class="placeholder col-6"></span> <br>
+                        <span class="placeholder col-4"></span>
+                    </p>
+                    <p class="text-white">Продажи</p>
+                    <div class="container-fluid p-0">
+                        <p class="case_card_p2 m-0 text-white fs-6 placeholder-glow">
+                            <span class="placeholder col-7"></span> <br>
+                            <span class="placeholder col-5"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="digest_card p-4 bg-dark category_messages">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5 placeholder-glow">
+                        <span class="placeholder col-6"></span> <br>
+                        <span class="placeholder col-4"></span>
+                    </p>
+                    <p class="text-white">Рассылки</p>
+                    <div class="container-fluid p-0">
+                        <p class="case_card_p2 m-0 text-white fs-6 placeholder-glow">
+                            <span class="placeholder col-7"></span> <br>
+                            <span class="placeholder col-5"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="digest_card p-4 bg-dark category_vid">
+                    <p class="case_card_p1 text-white fw-medium m-0 fs-5 placeholder-glow">
+                        <span class="placeholder col-6"></span> <br>
+                        <span class="placeholder col-4"></span>
+                    </p>
+                    <p class="text-white">Видео</p>
+                    <div class="container-fluid p-0">
+                        <p class="case_card_p2 m-0 text-white fs-6 placeholder-glow">
+                            <span class="placeholder col-7"></span> <br>
+                            <span class="placeholder col-5"></span>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper pt-3 pt-lg-1 pt-xl-2 pt-xxl-4">
+        <section class="form_section p-0 container-fluid">
+            <div class="form_labeling">
+                <h1 class="gradient_h display-1 align-self-center align-self-lg-start">Оставить заявку</h1>
+                <h2 class="form_h2">Давайте поговорим о том, <br>
+                   <span class="form_h2_margin"> как мы можем сделать <span class="gradient_text">отличную работу</span> вместе </span> 
+                </h2>
+            </div>
+            <form class="form_custom" id="customForm" novalidate>
+                <div class="form_grid">
+                    <div class="form_cell">
+                            <label for="name" class="form-label form-req">ФИО <span class="form_star">*</span></label>
+                            <input type="text" class="form-control form-req" id="name" placeholder="" required>
+                            <div class="error-message" id="nameError">Это поле обязательно для заполнения</div>
+                    </div>
+                    
+                    <div class="form_cell">
+                        <label for="email" class="form-label form-req">Почта <span class="form_star">*</span></label>
+                        <input type="email" class="form-control form-req" id="email" placeholder="" required>
+                        <div class="error-message" id="emailError">Это поле обязательно для заполнения</div>
+                    </div>
+                
+                    <div class="form_cell">
+                            <label for="website" class="form-label">Сайт</label>
+                            <input type="text" class="form-control" id="website" placeholder="">
+                    </div>
+                    
+                    <div class="form_cell">
+                        <label for="company" class="form-label">Расскажите о компании</label>
+                        <input type="text" class="form-control" id="company" placeholder="">
+                    </div>
+
+                    <div class="form_cell">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="">
+                    </div>
+                    
+                    <div class="form_cell">
+                            <label for="calltime" class="form-label"> <span class="form_label_addition" >Дата и время по МСК</span>  Когда удобно принять звонок</label>
+                            <input type="text" class="form-control" id="calltime" placeholder="">
+                    </div>
+                    
+                    <div class="form_col_drop">
+                        <div class="form_cell">
+                            <label for="services" class="form-label">Какие услуги интересуют?</label>
+                            <select class="form-select" id="services">
+                            <option value="seo">SEO продвижение сайтов</option>
+                            <option value="crm">Настройка CRM</option>
+                            <option value="context_ads">Настройка и ведение контекстной рекламы</option>
+                            <option value="web_development">Разработка сайтов</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit_btn">Отправить</button>
+                    </div>
+                </div>
+            </form>
+              <!-- Модальное окно -->
+              <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="successModalLabel">Успех</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Ваша форма была успешно отправлена!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary modal_button" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <footer class="footer">
+            <a class="footer_a" href="/Traffic-BS5-ver/index.html"> 
+                <img class="footer_logo footer_col" id="foot_col1" src="/Traffic-BS5-ver/Img/logos/Main_logo.svg" alt="Logo"> 
+            </a>
+            <div class="footer_col" id="foot_col2">
+                <p class="footer_col_h">
+                    Полезный дайджест <br>
+                     для Вашего бизнеса
+                </p>
+                <div class="footer_col_img">
+                    <img src="/Traffic-BS5-ver/Img/icons/icon-vk-pink.svg" alt="">
+                    <img src="/Traffic-BS5-ver/Img/icons/icon-tg-pink.svg" alt="">
+                </div>
+            </div>
+            <div class="footer_col" id="foot_col3">
+                <p class="footer_col_p mb-2">Пн - Пт (9:00 - 18:00 МСК)</p>
+                <p class="footer_col_p">Тел: 8 (965) 548 74 26</p>
+                <p class="footer_col_p">Email: info@traffic13.ru</p>
+            </div>
+            <div class="footer_col" id="foot_col4">
+                <p class="footer_col_p mb-2">Написать нам</p>
+                <div class="footer_col_img mb-2">
+                    <img src="/Traffic-BS5-ver/Img/icons/icon-vk.svg" alt="">
+                    <img src="/Traffic-BS5-ver/Img/icons/icon-tg.svg" alt="">
+                    <img src="/Traffic-BS5-ver/Img/icons/icon-whatsapp.svg" alt="">
+                </div>
+            </div>
+            <div class="footer_col" id="foot_col5">
+                <p class="footer_col_h2">По партнерству: <br> <span class="medium"> limarx87@gmail.com </span></p>
+                <a href="" class="footer_button">Заполнить бриф</a>
+            </div>
+
+        </footer>
+    </div>
+    <script src="/Traffic-BS5-ver/js/main_app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

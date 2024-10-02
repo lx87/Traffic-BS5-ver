@@ -1589,4 +1589,70 @@ a, button, p, h1, h2, h3, h4, h5 {
   .partn_main_h {
     margin-top: 1rem;
   }
+}
+#card1_dig {
+  background-image: url(/Traffic-BS5-ver/Img/grid_digest/1.png);
+}
+
+#card2_dig {
+  background-image: url(/Traffic-BS5-ver/Img/grid_digest/2.png);
+}
+
+#card3_dig {
+  background-image: url(/Traffic-BS5-ver/Img/grid_digest/3.png);
+}
+
+.digest_card {
+  box-sizing: border-box;
+  border: 1px solid #c536ef;
+  border-radius: 6px;
+  width: 28vw;
+  height: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow ease 0.3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .digest_card {
+    width: 42vw;
+    height: 27vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .digest_card {
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+.digest_card:hover {
+  box-shadow: inset 0px 4px 107px 0px rgba(178, 61, 224, 0.47);
+}
+
+.custom-btn_digest {
+  padding: 10px 20px;
+}
+
+.custom-pills-digest .nav-link {
+  background-color: rgba(255, 255, 255, 0.135);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.custom-pills-digest .nav-link.active {
+  background-color: rgba(255, 0, 255, 0.368627451);
+  color: white;
+  border-color: #C536EF;
+}
+
+.card_hidden {
+  display: none;
+}
+
+.color_span {
+  color: #FF57FF;
 }/*# sourceMappingURL=main.css.map */
